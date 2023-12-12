@@ -1,8 +1,11 @@
-#soit106 advance_006
-a=int(input())
+#soit106 advance_004
+a=input()
 
-ans=0
-
-for i in range(1,a):
-	ans+=i*(i+1)
-print(ans)
+for c in a:
+	if c>='a' and c<='z':
+		print(c.upper(),end='')
+	elif c>='A' and c<='Z':
+		print(c.lower(),end='')
+	else:
+		print(c,end='')
+print()
